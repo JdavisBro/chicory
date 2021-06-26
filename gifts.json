@@ -1,0 +1,492 @@
+{
+    "gift_2windbomb": {
+        "screen": "0_-2_-18",
+        "x": 1728.0,
+        "y": 528.0
+    },
+    "gift_backflip": {
+        "screen": "0_-5_-2",
+        "x": 1080.0,
+        "y": 456.0
+    },
+    "gift_big_waterfall": {
+        "screen": "0_-3_-2",
+        "x": 696.0,
+        "y": 552.0
+    },
+    "gift_bombelevation": {
+        "screen": "0_-5_-4",
+        "x": 1584.0,
+        "y": 384.0
+    },
+    "gift_bombisland": {
+        "screen": "0_-3_6",
+        "x": 408.0,
+        "y": 216.0
+    },
+    "gift_bounce1": {
+        "screen": "0_1_5",
+        "x": 1152.0,
+        "y": 360.0
+    },
+    "gift_brekkiebeach_strip": {
+        "screen": "0_6_0",
+        "x": 480.0,
+        "y": 744.0
+    },
+    "gift_canyon_blackpit": {
+        "screen": "0_4_-6",
+        "x": 336.0,
+        "y": 312.0
+    },
+    "gift_canyon_entrance": {
+        "screen": "0_6_-5",
+        "x": 168.0,
+        "y": 480.0
+    },
+    "gift_canyon_ledgemaze": {
+        "screen": "0_6_-7",
+        "x": 408.0,
+        "y": 168.0
+    },
+    "gift_canyon_top": {
+        "screen": "0_4_-10",
+        "x": 912.0,
+        "y": 912.0
+    },
+    "gift_canyonpool": {
+        "screen": "0_3_-7",
+        "x": 480.0,
+        "y": 288.0
+    },
+    "gift_cave1_1": {
+        "screen": "1_4_4",
+        "x": 1512.0,
+        "y": 912.0
+    },
+    "gift_cave1_2": {
+        "screen": "1_3_3",
+        "x": 504.0,
+        "y": 408.0
+    },
+    "gift_cave1_hidden": {
+        "screen": "1_5_3",
+        "x": 624.0,
+        "y": 384.0
+    },
+    "gift_cave2_1": {
+        "screen": "1_-4_-2",
+        "x": 696.0,
+        "y": 264.0
+    },
+    "gift_cave2_2": {
+        "screen": "1_-4_-1",
+        "x": 1536.0,
+        "y": 336.0
+    },
+    "gift_cavern_enter1": {
+        "screen": "1_4_-6",
+        "x": 600.0,
+        "y": 216.0
+    },
+    "gift_cavern_highroad2": {
+        "screen": "1_6_-6",
+        "x": 1608.0,
+        "y": 744.0
+    },
+    "gift_cavern_lowroad": {
+        "screen": "1_5_-4",
+        "x": 960.0,
+        "y": 288.0
+    },
+    "gift_cavern_source": {
+        "screen": "1_4_-5",
+        "x": 1056.0,
+        "y": 336.0
+    },
+    "gift_deep1": {
+        "screen": "2_8_-5",
+        "x": 1008.0,
+        "y": 192.0
+    },
+    "gift_deep2": {
+        "screen": "2_8_-4",
+        "x": 1800.0,
+        "y": 456.0
+    },
+    "gift_deepcorner": {
+        "screen": "2_5_-3",
+        "x": 1704.0,
+        "y": 168.0
+    },
+    "gift_deepcorridor": {
+        "screen": "2_4_-5",
+        "x": 1392.0,
+        "y": 864.0
+    },
+    "gift_deeppaths": {
+        "screen": "2_3_-6",
+        "x": 240.0,
+        "y": 264.0
+    },
+    "gift_deepshroom": {
+        "screen": "2_5_-6",
+        "x": 744.0,
+        "y": 264.0
+    },
+    "gift_dinners_littletop": {
+        "screen": "0_0_-7",
+        "x": 960.0,
+        "y": 192.0
+    },
+    "gift_dinners_skytop": {
+        "screen": "0_2_-7",
+        "x": 288.0,
+        "y": 456.0
+    },
+    "gift_dinners_southcave": {
+        "screen": "0_1_-2",
+        "x": 1416.0,
+        "y": 840.0
+    },
+    "gift_dinners_widetop": {
+        "screen": "0_2_-4",
+        "x": 1643.0,
+        "y": 699.0019
+    },
+    "gift_elevenses3": {
+        "screen": "0_-4_-2",
+        "x": 264.0,
+        "y": 312.0
+    },
+    "gift_elevenses_cave": {
+        "screen": "1_-3_-4",
+        "x": 672.0,
+        "y": 432.0
+    },
+    "gift_flower1": {
+        "screen": "0_2_2",
+        "x": 192.0,
+        "y": 216.0
+    },
+    "gift_foothill_entrance": {
+        "screen": "0_-5_1",
+        "x": 480.0,
+        "y": 168.0
+    },
+    "gift_foothill_shrooms": {
+        "screen": "0_-6_-2",
+        "x": 1584.0,
+        "y": 240.0
+    },
+    "gift_foothills_ledgefall": {
+        "screen": "0_-5_-3",
+        "x": 936.0,
+        "y": 216.0
+    },
+    "gift_guzzleriver_corner": {
+        "screen": "0_5_0",
+        "x": 1128.0,
+        "y": 288.0
+    },
+    "gift_guzzleriver_source": {
+        "screen": "0_4_-3",
+        "x": 1392.0,
+        "y": 648.0
+    },
+    "gift_hidden_brewpathtop": {
+        "screen": "1_0_-2",
+        "x": 1248.0,
+        "y": 432.0
+    },
+    "gift_highriver_sidepath": {
+        "screen": "0_-2_-3",
+        "x": 480.0,
+        "y": 168.0
+    },
+    "gift_island1": {
+        "screen": "0_-5_8",
+        "x": 144.0,
+        "y": 456.0
+    },
+    "gift_island_cliff1": {
+        "screen": "0_-1_11",
+        "x": 144.0,
+        "y": 528.0
+    },
+    "gift_island_dup2": {
+        "screen": "0_-5_10",
+        "x": 1416.0,
+        "y": 240.0
+    },
+    "gift_island_flower": {
+        "screen": "0_2_12",
+        "x": 576.0,
+        "y": 192.0
+    },
+    "gift_island_hop": {
+        "screen": "0_-3_5",
+        "x": 864.0,
+        "y": 600.0
+    },
+    "gift_island_shroom": {
+        "screen": "0_-3_11",
+        "x": 216.0,
+        "y": 216.0
+    },
+    "gift_lab": {
+        "screen": "1_4_-3",
+        "x": 408.0,
+        "y": 840.0
+    },
+    "gift_lemon": {
+        "screen": "0_1_1",
+        "x": 1776.0,
+        "y": 600.0
+    },
+    "gift_luncheonledge": {
+        "screen": "0_-1_-1",
+        "x": 672.0,
+        "y": 432.0
+    },
+    "gift_macaroon": {
+        "screen": "0_-1_1",
+        "x": 480.0,
+        "y": 312.0
+    },
+    "gift_meadow_cliff": {
+        "screen": "0_1_-1",
+        "x": 1056.0,
+        "y": 384.0
+    },
+    "gift_meadowgate": {
+        "screen": "0_3_-3",
+        "x": 408.0,
+        "y": 432.0
+    },
+    "gift_mountain_top_cave": {
+        "screen": "1_-5_-22",
+        "x": 1056.0,
+        "y": 408.0
+    },
+    "gift_mtn_highcorner": {
+        "screen": "0_-6_-5",
+        "x": 648.0,
+        "y": 888.0
+    },
+    "gift_mtn_waterfall": {
+        "screen": "0_-5_-5",
+        "x": 1344.0,
+        "y": 432.0
+    },
+    "gift_mtntop_windcloud": {
+        "screen": "0_-2_-12",
+        "x": 960.0,
+        "y": 384.0
+    },
+    "gift_mtntrail1": {
+        "screen": "0_-2_-4",
+        "x": 720.0,
+        "y": 720.0
+    },
+    "gift_mtntrail2": {
+        "screen": "0_-1_-4",
+        "x": 192.0,
+        "y": 624.0
+    },
+    "gift_mtntrail3": {
+        "screen": "0_-1_-5",
+        "x": 984.0,
+        "y": 456.0
+    },
+    "gift_peak_entrance": {
+        "screen": "0_-2_-7",
+        "x": 288.0,
+        "y": 600.0
+    },
+    "gift_peak_wall": {
+        "screen": "0_-4_-21",
+        "x": 1644.0,
+        "y": 862.0
+    },
+    "gift_potluck_beach": {
+        "screen": "0_-5_4",
+        "x": 1056.0,
+        "y": 672.0
+    },
+    "gift_potluck_north": {
+        "screen": "0_-6_2",
+        "x": 552.0009,
+        "y": 384.0
+    },
+    "gift_rainforest_bomb": {
+        "screen": "0_5_5",
+        "x": 1320.0,
+        "y": 120.0
+    },
+    "gift_rainforest_br": {
+        "screen": "0_6_3",
+        "x": 984.0,
+        "y": 240.0
+    },
+    "gift_rainforest_clouds": {
+        "screen": "0_5_4",
+        "x": 144.0,
+        "y": 216.0
+    },
+    "gift_rainforest_meet": {
+        "screen": "0_4_3",
+        "x": 576.0,
+        "y": 768.0
+    },
+    "gift_rainforest_platforms": {
+        "screen": "0_7_2",
+        "x": 1320.0,
+        "y": 312.0
+    },
+    "gift_rainforest_tl": {
+        "screen": "0_4_2",
+        "x": 240.0,
+        "y": 456.0
+    },
+    "gift_river_triangle": {
+        "screen": "0_-2_4",
+        "x": 1248.0,
+        "y": 504.0
+    },
+    "gift_riverhigh": {
+        "screen": "0_-3_-5",
+        "x": 912.0,
+        "y": 480.0
+    },
+    "gift_ruins_bomb1": {
+        "screen": "1_-7_-3",
+        "x": 1512.0,
+        "y": 384.0
+    },
+    "gift_ruins_bomb2": {
+        "screen": "1_-5_-1",
+        "x": 864.0,
+        "y": 408.0
+    },
+    "gift_ruins_bombmaze": {
+        "screen": "2_-5_0",
+        "x": 984.0,
+        "y": 504.0
+    },
+    "gift_ruins_nature": {
+        "screen": "2_-7_-1",
+        "x": 264.0,
+        "y": 672.0
+    },
+    "gift_secret_waterfall": {
+        "screen": "0_-3_-1",
+        "x": 1272.0,
+        "y": 720.0
+    },
+    "gift_shroom_growflower": {
+        "screen": "0_3_3",
+        "x": 240.0,
+        "y": 744.0
+    },
+    "gift_sipsriver_sidepath": {
+        "screen": "0_-3_0",
+        "x": 1512.0,
+        "y": 384.0
+    },
+    "gift_southisland": {
+        "screen": "0_-7_6",
+        "x": 768.0,
+        "y": 240.0
+    },
+    "gift_southsecret": {
+        "screen": "0_3_8",
+        "x": 1464.0,
+        "y": 120.0
+    },
+    "gift_suppercave": {
+        "screen": "0_4_6",
+        "x": 504.0,
+        "y": 216.0
+    },
+    "gift_supperdeadend": {
+        "screen": "0_3_4",
+        "x": 696.0,
+        "y": 792.0
+    },
+    "gift_supperfall": {
+        "screen": "0_3_5",
+        "x": 648.0,
+        "y": 720.0
+    },
+    "gift_supperpath": {
+        "screen": "0_2_4",
+        "x": 1008.0,
+        "y": 648.0
+    },
+    "gift_swamp_boat": {
+        "screen": "0_0_6",
+        "x": 168.0,
+        "y": 623.9995
+    },
+    "gift_swamp_endpoint": {
+        "screen": "0_2_7",
+        "x": 720.0,
+        "y": 912.0
+    },
+    "gift_swamp_islandmaze": {
+        "screen": "0_-1_6",
+        "x": 1728.0,
+        "y": 384.0
+    },
+    "gift_swampcorner": {
+        "screen": "0_2_6",
+        "x": 816.0,
+        "y": 192.0
+    },
+    "gift_swampfling": {
+        "screen": "0_-1_7",
+        "x": 552.0,
+        "y": 744.0
+    },
+    "gift_swimtutsecret": {
+        "screen": "2_-1_-4",
+        "x": 1128.0,
+        "y": 528.0
+    },
+    "gift_top_waterfall": {
+        "screen": "0_-5_-7",
+        "x": 408.0,
+        "y": 288.0
+    },
+    "gift_townhall_base": {
+        "screen": "0_0_-6",
+        "x": 144.0,
+        "y": 600.0
+    },
+    "gift_under_sipsbridge": {
+        "screen": "1_-2_2",
+        "x": 480.0,
+        "y": 600.0
+    },
+    "gift_under_swampbridge": {
+        "screen": "1_-2_6",
+        "x": 1296.0,
+        "y": 360.0
+    },
+    "gift_woods_altpath_end": {
+        "screen": "0_4_5",
+        "x": 1296.0,
+        "y": 720.0
+    },
+    "gift_woods_bonus": {
+        "screen": "0_5_6",
+        "x": 1032.0,
+        "y": 336.0
+    },
+    "gift_woods_hiddencave": {
+        "screen": "1_5_6",
+        "x": 648.0,
+        "y": 432.0
+    }
+}

@@ -1,0 +1,16 @@
+HTML {
+    font-size: 2vh
+}
+
+input[type=file] {
+    font-size: 2vh;
+}
+
+#mapview {
+    position: absolute;
+    overflow: hidden;
+    width: 70%;
+    height: 80%;
+    border-radius: 16px;
+    background-color: aqua;
+}

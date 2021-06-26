@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Save viewer for Chicory: A Colorful Tale</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script>
+</head>
+<body>
+    <p>Load _playdata file:</p> 
+    <input type=file id=file>
+    <p>Located at Windows %localappdata%/paintdog/save | Mac: ~/Library/Application Support/paintdog/save</p>
+    <p>World Map (ctrl+scroll to zoom):</p>
+    <div id=mapview>
+    <div id=map>
+        <img src=assets/maps/0/small.png>
+        <div id=litterMarkers></div>
+    </div>
+    </div>
+    <script src=index.js></script>
+</body>
+</html>
