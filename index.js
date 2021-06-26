@@ -36,7 +36,9 @@ function change() {
             litterMarker.style.left = posX-10 + "px";
             litterMarker.style.top = posY-10 + "px";
             litterMarker.id = key;
-            litterMarkers.appendChild(litterMarker.cloneNode());
+            var tempMark = litterMarker.cloneNode()
+            tempMark.addEventListener("click",selectMarker);
+            litterMarkers.appendChild(tempMark);
             var listElem = document.createElement("a");
             listElem.href = "#";
             listElem.innerHTML = key.replaceAll("found_litter_","").replaceAll("_"," ") + "<br>";
@@ -47,15 +49,22 @@ function change() {
             listElem.addEventListener("click",function(e) {
                 var view = document.getElementById("mapview");
                 sb.scrollTo({x: e.target.getAttribute("litterPosX")-view.offsetWidth/2, y: e.target.getAttribute("litterPosY")-view.offsetHeight/2});
-                var selMarkers = document.getElementsByClassName("selectedMarker");
-                for (let i = 0;i<selMarkers.length;i++) {
-                    selMarkers[i].classList.remove("selectedMarker");
-                }
-                console.log(document.getElementById(e.target.getAttribute("markerId")));
-                document.getElementById(e.target.getAttribute("markerId")).classList.add("selectedMarker")
+                selectMarker(e,true)
             })
         }
     }
+}
+
+function selectMarker(e,t=false) {
+    var target = e.target;
+    if (t) {
+        target = document.getElementById(e.target.getAttribute("markerId"));
+    }
+    var selMarkers = document.getElementsByClassName("selectedMarker");
+    for (let i = 0;i<selMarkers.length;i++) {
+        selMarkers[i].classList.remove("selectedMarker");
+    }
+    target.classList.add("selectedMarker")
 }
 
 function makeMap() {
@@ -66,7 +75,8 @@ function makeMap() {
         viewport,
         map,
         scrollMode: 'transform',
-        emulateScroll: false
+        emulateScroll: false,
+        textSelection: true
       });      
 
     const offsetX = mapCentres[currentMap][currentMapSize];
