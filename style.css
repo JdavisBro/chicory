@@ -11,6 +11,27 @@ input[type=file] {
     overflow: hidden;
     width: 70%;
     height: 80%;
+    left: 0;
     border-radius: 16px;
     background-color: aqua;
+}
+
+#litterList {
+    position: absolute;
+    height: 80%;
+    width: 15%;
+    overflow-y: scroll;
+    left: 70%;
+    border-radius: 16px;
+    background-color: rgba(20,170,255,0.5)
+}
+
+.selectedMarker {
+    animation: selected 2s infinite;
+}
+
+@keyframes selected {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(1);}
 }
