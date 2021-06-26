@@ -19,39 +19,58 @@ document.getElementById('file').onchange = function(){
 };
 
 function change() {
-    var litterMarkers = document.getElementById("litterMarkers");
-    var litterMarker = document.createElement("img");
-    litterMarker.src = "assets/markers/litter.png";
-    litterMarker.style.position = "absolute";
-    litterMarker.style.height = "20px";
-    litterMarkers.innerHTML = "";
-    var litterList = document.getElementById("litterList");
-    litterList.innerHTML = "<p>Litter:</p>";
+    var markers = document.getElementById("litterMarkers");
+    var marker = document.createElement("img");
+    marker.src = "assets/markers/litter.png";
+    marker.style.position = "absolute";
+    marker.style.height = "20px";
+    markers.innerHTML = "";
+    var list = document.getElementById("litterList");
+    list.innerHTML = "<p>Litter:</p>";
     for (const key in litter) {
         var screen = litter[key]["screen"].split("_");
         if (!saveJson.hasOwnProperty(key) & screen[0] == currentMap) {
-            var posX = mapCentres[currentMap][currentMapSize][0] + (1920/mapGridDivs[currentMapSize]*Number(screen[1])) + litter[key]["x"]/mapGridDivs[currentMapSize];
-            var posY = mapCentres[currentMap][currentMapSize][1] + (1080/mapGridDivs[currentMapSize]*Number(screen[2])) + litter[key]["y"]/mapGridDivs[currentMapSize];
-            litterMarker.style.left = posX-10 + "px";
-            litterMarker.style.top = posY-10 + "px";
-            litterMarker.id = key;
-            var tempMark = litterMarker.cloneNode()
-            tempMark.addEventListener("click",selectMarker);
-            litterMarkers.appendChild(tempMark);
-            var listElem = document.createElement("a");
-            listElem.href = "#";
-            listElem.innerHTML = key.replaceAll("found_litter_","").replaceAll("_"," ") + "<br>";
-            listElem.setAttribute("litterPosX", posX);
-            listElem.setAttribute("litterPosY", posY);
-            listElem.setAttribute("markerId", key);
-            litterList.appendChild(listElem);
-            listElem.addEventListener("click",function(e) {
-                var view = document.getElementById("mapview");
-                sb.scrollTo({x: e.target.getAttribute("litterPosX")-view.offsetWidth/2, y: e.target.getAttribute("litterPosY")-view.offsetHeight/2});
-                selectMarker(e,true)
-            })
+            addMarker(key,litter[key],screen,markers,marker,list);
         }
     }
+    var markers = document.getElementById("giftMarkers");
+    var marker = document.createElement("img");
+    marker.src = "assets/markers/gifts.png";
+    marker.style.position = "absolute";
+    marker.style.height = "20px";
+    markers.innerHTML = "";
+    var list = document.getElementById("giftList");
+    list.innerHTML = "<p>Gifts:</p>";
+    for (const key in gifts) {
+        var screen = gifts[key]["screen"].split("_");
+        if (!saveJson.hasOwnProperty(key) & screen[0] == currentMap) {
+            addMarker(key,gifts[key],screen,markers,marker,list);
+        }
+    }
+}
+
+function addMarker(key,locationData,screen,markers,marker,list) {
+    var posX = mapCentres[currentMap][currentMapSize][0] + (1920/mapGridDivs[currentMapSize]*Number(screen[1])) + locationData["x"]/mapGridDivs[currentMapSize];
+    var posY = mapCentres[currentMap][currentMapSize][1] + (1080/mapGridDivs[currentMapSize]*Number(screen[2])) + locationData["y"]/mapGridDivs[currentMapSize];
+    marker.style.left = posX-10 + "px";
+    marker.style.top = posY-10 + "px";
+    marker.id = key;
+    var tempMark = marker.cloneNode()
+    tempMark.addEventListener("click",selectMarker);
+    markers.appendChild(tempMark);
+    var listElem = document.createElement("a");
+    listElem.href = "#";
+    listElem.innerHTML = key.replaceAll("found_litter_","").replaceAll("gift_","").replaceAll("_"," ") + "<br>";
+    listElem.setAttribute("markerPosX", posX);
+    listElem.setAttribute("markerPosY", posY);
+    listElem.setAttribute("markerId", key);
+    list.appendChild(listElem);
+    listElem.addEventListener("click",function(e) {
+        var view = document.getElementById("mapview");
+        sb.scrollTo({x: e.target.getAttribute("markerPosX")-view.offsetWidth/2, y: e.target.getAttribute("markerPosY")-view.offsetHeight/2});
+        selectMarker(e,true)
+    })
+
 }
 
 function changeLayer(layer) {
