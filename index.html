@@ -5,17 +5,25 @@
     <script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script>
 </head>
 <body>
-    <p>Load _playdata file:</p> 
-    <input type=file id=file>
-    <p>Located at Windows %localappdata%/paintdog/save | Mac: ~/Library/Application Support/paintdog/save</p>
+    <p>Load _playdata file (Located at Windows %localappdata%/paintdog/save | Mac: ~/Library/Application Support/paintdog/save):</p> 
+    <label for="file" class="save-load">Load Save</label>
+    <input type=file id=file accept="_playdata">
     <p>World Map (ctrl+scroll to zoom):</p>
     <div id=mapview>
     <div id=map>
-        <img src=assets/maps/0/small.png>
+        <img id=mapImg src=assets/maps/0/small.png>
         <div id=litterMarkers></div>
     </div>
     </div>
-    <div id=litterList><p>&nbsp;&nbsp;Litter:</p></div>
+    <div id=litterList><p>Litter:</p></div>
+
+    <div class=mapControls>
+        <a onclick="toCenter();" href="#">To Center</a>
+        <a onclick="changeLayer(0)" href="#">Layer 0 (surface)</a>
+        <a onclick="changeLayer(1)" href="#">Layer 1 (underground)</a>
+        <a onclick="changeLayer(2)" href="#">Layer 2 (underground)</a>
+    </div>
+
     <script src=index.js></script>
 </body>
 </html>
