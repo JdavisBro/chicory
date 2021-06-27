@@ -59,7 +59,7 @@ function addMarker(key,locationData,screen,markers,marker,list) {
     tempMark.addEventListener("click",selectMarker);
     markers.appendChild(tempMark);
     var listElem = document.createElement("a");
-    listElem.href = "#map";
+    listElem.href = "#";
     listElem.innerHTML = key.replaceAll("found_litter_","").replaceAll("gift_","").replaceAll("_"," ") + "<br>";
     listElem.setAttribute("markerPosX", posX);
     listElem.setAttribute("markerPosY", posY);
@@ -71,6 +71,13 @@ function addMarker(key,locationData,screen,markers,marker,list) {
         selectMarker(e,true)
     })
 
+}
+
+function centerToSelection() {
+    var view = document.getElementById("mapview");
+    var selection = document.getElementsByClassName("selectedMarker")[0]
+    var selectionList = document.querySelector("[markerId="+selection.id+"]")
+    sb.scrollTo({x: selectionList.getAttribute("markerPosX")-view.offsetWidth/2, y: selectionList.getAttribute("markerPosY")-view.offsetHeight/2});
 }
 
 function changeLayer(layer) {
