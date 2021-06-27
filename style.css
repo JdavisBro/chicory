@@ -40,6 +40,7 @@ a {
     top: -3vh;
     background-color: rgba(0,0,0,0.7);
     border-radius: 16px;
+    z-index: 30;
 }
 
 #mapview {
@@ -110,3 +111,39 @@ body::-webkit-scrollbar-track {
 }
 
 #file {display: none;}
+
+.toJdavis {
+    position: absolute;
+    right: 0;
+    top: -4vh;
+    font-size: 2vh;
+    text-align: right;
+}
+
+.toJdavis p {
+    position: absolute;
+    right: 0.2vw;
+    top: -2.2vh;
+    z-index: 20;
+    white-space: nowrap;
+}
+
+.toJdavis img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5vw;
+    z-index: 10;
+}
+
+.textthing {
+    color: white;
+    text-shadow: -0.2vh 0 black, 0 0.2vh black, 0.2vh 0 black, 0 -0.2vh black;
+    line-height: 3vh;
+}
+
+#title {
+    position: absolute;
+    top: 1vh;
+    left: 0.4vh;
+}

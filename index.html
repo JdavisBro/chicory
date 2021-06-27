@@ -1,11 +1,16 @@
 <html>
 <head>
     <title>Save viewer for Chicory: A Colorful Tale</title>
+    <meta property="og:title" value="Chicory: A Colorful Tale Map">
+    <meta property="og:description" value="Chicory: A Colorful Tale map for litter and gifts with save loading!">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script>
 </head>
 <body>
+    <h2 id=title class=textthing>Chicory Map</h2>
+    <h6 id=subtitle class=textthing>With litter, gifts and save viewing!</h6>
     <div class=menubar>
+        
         <label for="file" class="save-load">Load Save File (_playdata)</label><input type=file id=file accept="_playdata"><a id=info>&nbsp;&nbsp;🛈</a>
         <br>
         <br>
@@ -17,6 +22,7 @@
             <a onclick="saveJson = {};change()" href="#">Reset save data</a> |
             <a onclick="centerToSelection()" href="#">To Selected</a>
         </div>
+        <a href="/" class=toJdavis><p>By JdavisBro</p><img src="assets/tojdavissite.png"></a>
     </div>
     <div id=mapview>
     <div id=map>
