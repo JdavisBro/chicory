@@ -5,10 +5,18 @@
     <script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script>
 </head>
 <body>
-    <p>Load _playdata file (Located at Windows %localappdata%/paintdog/save | Mac: ~/Library/Application Support/paintdog/save):</p> 
-    <label for="file" class="save-load">Load Save</label>
-    <input type=file id=file accept="_playdata">
-    <p>World Map (ctrl+scroll to zoom):</p>
+    <div class=menubar>
+        <label for="file" class="save-load">Load Save File (_playdata)</label><input type=file id=file accept="_playdata"><a id=info>&nbsp;&nbsp;🛈</a>
+        <br>
+        <br>
+        <div class=mapControls>
+            <a onclick="toCenter();" href="#map">To Center</a> | 
+            <a onclick="changeLayer(0)" href="#map">Surface</a> | 
+            <a onclick="changeLayer(1)" href="#map">Layer 1</a> | 
+            <a onclick="changeLayer(2)" href="#map">Layer 2</a> | 
+            <a onclick="saveJson = {};change()" href="#map">Reset save data</a>
+        </div>
+    </div>
     <div id=mapview>
     <div id=map>
         <img id=mapImg src=assets/maps/0/small.png>
@@ -18,14 +26,6 @@
     </div>
     <div class=list id=litterList><p>Litter:</p></div>
     <div class=list id=giftList><p>Gifts:</p></div>
-
-    <div class=mapControls>
-        <a onclick="toCenter();" href="#">To Center</a>
-        <a onclick="changeLayer(0)" href="#">Layer 0 (surface)</a>
-        <a onclick="changeLayer(1)" href="#">Layer 1 (underground)</a>
-        <a onclick="changeLayer(2)" href="#">Layer 2 (underground)</a>
-    </div>
-
     <script src=index.js></script>
 </body>
 </html>

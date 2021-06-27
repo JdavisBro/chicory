@@ -1,15 +1,45 @@
 HTML {
-    font-size: 2vh;
-    scrollbar-color: auto rgba(0,0,0,0);
+    font-size: 3vh;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
-}
-
-input[type=file] {
-    font-size: 2vh;
+    scrollbar-color: rgba(0,0,0,0.2) rgba(0,0,0,0);
+    scrollbar-width: 0.5vw;
+    background-image: url(assets/titlebar.png);
+    background-size: 100vw;
 }
 
 a {
     text-decoration: none;
+}
+
+.menubar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    top: 4vh;
+}
+
+.menubar a {
+    color: white;
+    text-shadow: -0.2vh 0 black, 0 0.2vh black, 0.2vh 0 black, 0 -0.2vh black;
+    line-height: 3vh;
+}
+
+.mapControls {
+    color: white;
+    text-shadow: -0.2vh 0 black, 0 0.2vh black, 0.2vh 0 black, 0 -0.2vh black;
+    line-height: 3vh;
+}
+
+#info:hover::after {
+    position: absolute;
+    font-size: 2vh;
+    content: "Located in '%localappdata%/paintdog/save' on Windows or '~/Library/Application Support/paintdog/save' on Mac";
+    top: -3vh;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 16px;
 }
 
 #mapview {
@@ -18,8 +48,8 @@ a {
     width: 70%;
     height: 80%;
     left: 0;
-    border-radius: 16px 0 0 16px;
-    background-color: aqua;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
     margin-bottom: 200px;
 }
 
@@ -31,23 +61,31 @@ body::-webkit-scrollbar-track {
     position: absolute;
     height: 80%;
     width: 14%;
+    top: 20%;
     padding-left: 1%;
     overflow-y: scroll;
+    font-size: 2vh;
+    white-space: nowrap;
+
 }
 
 #litterList {
     left: 70%;
-    background-color: rgba(20,170,255,0.5)
+    background-color: rgb(128, 208, 255)
 }
 
 #giftList {
     left: 85%;
-    background-color: rgba(255,0,170,0.5);
+    background-color: rgb(242, 90, 191);
 }
 
 .selectedMarker {
     animation: selected 2s infinite;
     z-index: 100;
+}
+
+.mapControls {
+    color: white;
 }
 
 @keyframes selected {
@@ -60,15 +98,15 @@ body::-webkit-scrollbar-track {
 .save-load {
     width: 2vw;
     height: 1vh;
-    background-color: orange;
-    border-width: 0.2vh;
+    background-color: white;
+    color: grey;
+    border-width: 0.1vh;
+    padding: 0.8vh;
+    padding-left: 7.1vw;
+    padding-right: 7.1vw;
     border-style: solid;
+    border-color: grey;
+    cursor: pointer;
 }
 
-#file {visibility: hidden;}
-
-.mapControls {
-    position: absolute;
-    top: 98%;
-    float: left;
-}
+#file {display: none;}

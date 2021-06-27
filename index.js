@@ -59,7 +59,7 @@ function addMarker(key,locationData,screen,markers,marker,list) {
     tempMark.addEventListener("click",selectMarker);
     markers.appendChild(tempMark);
     var listElem = document.createElement("a");
-    listElem.href = "#";
+    listElem.href = "#map";
     listElem.innerHTML = key.replaceAll("found_litter_","").replaceAll("gift_","").replaceAll("_"," ") + "<br>";
     listElem.setAttribute("markerPosX", posX);
     listElem.setAttribute("markerPosY", posY);
@@ -91,10 +91,20 @@ function selectMarker(e,t=false) {
         target = document.getElementById(e.target.getAttribute("markerId"));
     }
     var selMarkers = document.getElementsByClassName("selectedMarker");
+    var desel = false;
     for (let i = 0;i<selMarkers.length;i++) {
+        if (selMarkers[i].id == target.id) {
+            desel = true;
+        }
         selMarkers[i].classList.remove("selectedMarker");
     }
-    target.classList.add("selectedMarker")
+    if (!desel) {
+        target.classList.add("selectedMarker");
+    }
+}
+
+function scroll(e) {
+    console.log(e.deltaY)
 }
 
 function makeMap() {
@@ -106,7 +116,7 @@ function makeMap() {
         map,
         scrollMode: 'transform',
         emulateScroll: false,
-        textSelection: true
+        textSelection: true,
     });      
     sb.setPosition({
       x: mapCentres[currentMap][currentMapSize][0]-viewport.offsetWidth/2+(1920/mapGridDivs[currentMapSize])/2,
