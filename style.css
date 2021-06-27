@@ -152,3 +152,7 @@ body::-webkit-scrollbar-track {
     top: 1vh;
     left: 0.4vh;
 }
+
+.deleteButton {
+    color: red;
+}
