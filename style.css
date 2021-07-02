@@ -39,7 +39,7 @@ a {
     content: "Located in '%localappdata%/paintdog/save' on Windows or '~/Library/Application Support/paintdog/save' on Mac";
     top: -3vh;
     background-color: rgba(0,0,0,0.7);
-    border-radius: 16px;
+    border-radius: 1vh;
     z-index: 30;
 }
 
@@ -106,7 +106,7 @@ body::-webkit-scrollbar-track {
 .mapControls a {
     color: white;
     padding: 1vh;
-    border-radius: 16px;
+    border-radius: 1vh;
     background-color: rgba(0, 0, 0, 0.5)
 }
 
@@ -170,6 +170,12 @@ body::-webkit-scrollbar-track {
     line-height: 3vh;
     position: absolute;
     left: 0.4vh;
+
+}
+
+.textthing a {
+    color: lightblue;
+    text-shadow: none;
 }
 
 #title {
@@ -181,7 +187,10 @@ body::-webkit-scrollbar-track {
 }
 
 #entranceToggle {
-    top: 10.2vh;
+    top: 8vh;
+    background-color: rgba(0,0,0,0.5);
+    padding: 1vh;
+    border-radius: 1vh;
 }
 
 #clickedPos {
