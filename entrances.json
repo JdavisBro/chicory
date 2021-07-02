@@ -1,0 +1,22 @@
+[
+    {
+        "id": "towerDoor",
+        "screen": "0_0_0",
+        "x": 970.0000000000001,
+        "y": 423.8330078125,
+        "to": ""
+    },
+    {
+        "id": "towerTree",
+        "screen": "0_0_-1",
+        "x": 990,
+        "y": 573.8330078125,
+        "to": ""
+    }
+]
+
+hi this file is under construction! BUT here's the thing
+
+id = "id" of the entrance (not actual in game, made by me)
+screen, x , y = self expanatory
+to = "id" of the entrance this leeds to!

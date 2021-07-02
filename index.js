@@ -144,12 +144,29 @@ function makeMap() {
         scrollMode: 'transform',
         emulateScroll: false,
         textSelection: true,
-    });      
+    });
     sb.setPosition({
       x: mapCentres[currentMap][currentMapSize][0]-viewport.offsetWidth/2+(1920/mapGridDivs[currentMapSize])/2,
       y: mapCentres[currentMap][currentMapSize][1]-viewport.offsetHeight/2+(1080/mapGridDivs[currentMapSize])/2
     });
     change();
+}
+
+document.getElementById('map').onclick = function clickEvent(e) {
+    var rect = e.target.getBoundingClientRect();
+    var x = e.clientX - rect.left; //x position within the element.
+    var y = e.clientY - rect.top;  //y position within the element.
+    var screen = []
+    var screenPos = []
+    screen[0] = currentMap
+    screen[1] = (x-mapCentres[currentMap][currentMapSize][0])/(1920/mapGridDivs[currentMapSize])
+    screenPos[0] = 1920 * (screen[1] - Math.floor(screen[1]))
+    screen[1] = Math.floor(screen[1])
+    screen[2] = (y-mapCentres[currentMap][currentMapSize][1])/(1080/mapGridDivs[currentMapSize])
+    screenPos[1] = 1080 * (screen[2] - Math.floor(screen[2]))
+    screen[2] = Math.floor(screen[2])
+    document.getElementById("clickedPos").innerHTML = "Last Clicked - Screen: L " + screen[0] + " X " + screen[1] + " Y " + screen[2] + " Pos: X " + Math.round(screenPos[0]*100)/100 + " Y " + Math.round(screenPos[1]*100)/100;
+    //navigator.clipboard.writeText(',\n{\n    "id": "'+screen[0]+"_"+screen[1]+"_"+screen[2]+'_0",\n    "screen": "'+screen[0]+"_"+screen[1]+"_"+screen[2]+'",\n    "x": '+screenPos[0]+',\n    "y": '+screenPos[1]+',\n    "to": ""\n}'); // This is for when i add the entrances to the map, this will take a long time AHHHH
 }
 
 window.addEventListener("load",makeMap);

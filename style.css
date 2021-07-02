@@ -145,12 +145,20 @@ body::-webkit-scrollbar-track {
     color: white;
     text-shadow: -0.2vh 0 black, 0 0.2vh black, 0.2vh 0 black, 0 -0.2vh black;
     line-height: 3vh;
+    position: absolute;
+    left: 0.4vh;
 }
 
 #title {
-    position: absolute;
     top: 1vh;
-    left: 0.4vh;
+}
+
+#subtitle {
+    top: 0vh;
+}
+
+#clickedPos {
+    top: 13vh;
 }
 
 .deleteButton {
