@@ -36,7 +36,7 @@ a {
 #info:hover::after {
     position: absolute;
     font-size: 2vh;
-    content: "Located in '%localappdata%/paintdog/save' on Windows or '~/Library/Application Support/paintdog/save' on Mac";
+    content: "You can load a file saved with the 'Save To File' button or load your save data located in '%localappdata%/paintdog/save' on Windows or '~/Library/Application Support/paintdog/save' on Mac, as '_playdata'";
     top: -3vh;
     background-color: rgba(0,0,0,0.7);
     border-radius: 1vh;
@@ -128,11 +128,10 @@ body::-webkit-scrollbar-track {
     width: 2vw;
     height: 1vh;
     background-color: white;
-    color: grey;
+    text-shadow: none !important;
+    color: grey !important;
     border-width: 0.1vh;
     padding: 0.8vh;
-    padding-left: 7.1vw;
-    padding-right: 7.1vw;
     border-style: solid;
     border-color: grey;
     cursor: pointer;

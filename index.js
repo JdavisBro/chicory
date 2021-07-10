@@ -16,11 +16,23 @@ document.getElementById('file').onchange = function(){
     var file = this.files[0];
     var reader = new FileReader();
     reader.onload = function(progressEvent){
-        saveJson = JSON.parse(this.result.split('\n')[3]);
+        if (this.result[0] == "{") {
+            saveJson = JSON.parse(this.result);
+        } else {
+            saveJson = JSON.parse(this.result.split('\n')[3]);
+        }
         change();
     };
     reader.readAsText(file);
 };
+
+function saveToFile() {
+    var myBlob = new Blob([JSON.stringify(saveJson)], {type: 'text/json'});
+    var anchor = document.createElement("a");
+    anchor.download = "save.json";
+    anchor.href = window.URL.createObjectURL(myBlob);
+    anchor.click();
+}
 
 function change() {
     var markers = document.getElementById("litterMarkers");

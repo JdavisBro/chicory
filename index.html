@@ -12,8 +12,10 @@
     <h6 id=entranceToggle class=textthing><a href="#" onclick="toggleMarkerButton('entranceMarkers')" id=entranceMarkersButton>O</a>&nbsp;Toggle Entrances</h6>
     <h6 id=clickedPos class=textthing>Last Clicked - (click somewhere)</h6>
     <div class=menubar>
-
-        <label for="file" class="save-load">Load Save File (_playdata)</label><input type=file id=file accept="_playdata"><a id=info>&nbsp;&nbsp;🛈</a><br><br>
+        <div class=save-buttons>
+            <a class=save-load href="#" onclick="saveToFile();">Save To File</a>
+            <label for="file" class="save-load">Load Save File</label><input type=file id=file accept="_playdata"><a id=info>&nbsp;&nbsp;🛈</a><br><br>
+        </div>
         <div class=mapControls>
             <a onclick="toCenter();" href="#">To Center</a>
             <a onclick="centerToSelection()" href="#">To Selected</a>
