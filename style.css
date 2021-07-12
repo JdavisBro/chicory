@@ -33,14 +33,22 @@ a {
     line-height: 3vh;
 }
 
-#info:hover::after {
+.info:hover::after {
     position: absolute;
     font-size: 2vh;
-    content: "You can load a file saved with the 'Save To File' button or load your save data located in '%localappdata%/paintdog/save' on Windows or '~/Library/Application Support/paintdog/save' on Mac, as '_playdata'";
     top: -3vh;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.9);
     border-radius: 1vh;
     z-index: 30;
+    max-width: 30vw;
+}
+
+#save-info:hover::after {
+    content: "This saves a file that contains the markers you've crossed off using the delete button next to them in the list. This is NOT a save file but can be loaded with the load button."
+}
+
+#load-info:hover::after {
+    content: "You can load a file saved with the 'Save To File' button or load your save data located in '%localappdata%/paintdog/save' on Windows or '~/Library/Application Support/paintdog/save' on Mac, as '_playdata'";
 }
 
 #mapview {
