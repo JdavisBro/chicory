@@ -252,7 +252,6 @@ body::-webkit-scrollbar-track {
         width: 33vw;
         height: 8vh;
         border-radius: 1vh 1vh 0 0;
-        z-index: 200;
         visibility: visible;
         text-align: center;
         line-height: 6vh;
