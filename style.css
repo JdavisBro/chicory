@@ -293,6 +293,10 @@ body::-webkit-scrollbar-track {
         background-color: rgb(253, 213, 126);
     }
 
+    .toJdavis, .toJdavis p {
+        top: -6vh;
+    }
+
     .toJdavis img {
         visibility: hidden;
     }
