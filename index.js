@@ -146,6 +146,10 @@ function addMarker(key,locationData,screen,markers,marker,list,yDiff=0,name=null
         list.appendChild(listElem);
         listElem.addEventListener("click",function(e) {
             var view = document.getElementById("mapview");
+            if (tabMode) {
+                t = e.target.parentNode.parentNode
+                selectTabB(t.previousSibling.previousSibling,t)
+            }
             sb.scrollTo({x: e.target.getAttribute("markerPosX")-view.offsetWidth/2, y: e.target.getAttribute("markerPosY")-view.offsetHeight/2});
             selectMarker(e,true)
         })
@@ -235,5 +239,43 @@ document.getElementById('map').onclick = function clickEvent(e) {
     //navigator.clipboard.writeText(',\n{\n    "id": "'+screen[0]+"_"+screen[1]+"_"+screen[2]+'_0",\n    "direction": "up",\n    "screen": "'+screen[0]+"_"+screen[1]+"_"+screen[2]+'",\n    "x": '+screenPos[0]+',\n    "y": '+screenPos[1]+',\n    "to": ""\n}'); // This is for when i add the entrances to the map, this will take a long time AHHHH
 }
 
+function selectTab(e) {
+    const selected = document.getElementsByClassName("tabSelected");
+    console.log(selected)
+    if (selected.length > 1) {
+        t = selected[0]
+        selectTabB(selected[0],selected[1]);
+        if (t.id == e.target.id) {return}
+    }
+    const target = e.target;
+    const target2 = e.target.nextSibling.nextSibling;
+    console.log(target2)
+    selectTabB(target,target2)
+}
+
+function selectTabB(target,target2) {
+    if (!target.classList.contains("tabSelected")) {
+        if (target.classList.contains("tabDeselected")) {
+            target.classList.remove("tabDeselected")
+            target2.classList.remove("tabDeselected")
+        }
+        target.classList.add("tabSelected")
+        target2.classList.add("tabSelected")
+    } else {
+        target.classList.remove("tabSelected")
+        target2.classList.remove("tabSelected")
+        target.classList.add("tabDeselected")
+        target2.classList.add("tabDeselected")
+    }
+    var tabMode = window.matchMedia("(orientation: portrait)").matches;
+}
+
+var tabs = document.getElementsByClassName("tab")
+
+for (let i = 0;i<tabs.length;i++) {
+    tabs[i].addEventListener("click",selectTab);
+}
+
+var tabMode = window.matchMedia("(orientation: portrait)").matches;
 window.addEventListener("load",makeMap);
 change();

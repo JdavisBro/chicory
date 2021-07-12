@@ -6,6 +6,7 @@ HTML {
     scrollbar-width: 0.5vw;
     background-image: url(assets/titlebar.png);
     background-size: 100vw;
+    overflow: hidden;
 }
 
 a {
@@ -212,4 +213,107 @@ body::-webkit-scrollbar-track {
 
 .deleteButton {
     color: red;
+}
+
+.tab {
+    visibility: hidden;
+}
+
+@media all and (orientation: portrait) {
+    HTML {
+        font-size: 2em;
+    }
+
+    #mapview {
+        width: 100.3vw;
+        height: 62vh;
+        top: 30vh;
+    }
+
+    .list {
+        height: 80vh;
+        width: 100vw;
+        left: 0 !important;
+        top: 100vh;
+        padding-left: 0.3%;
+        overflow-y: scroll;
+        font-size: 2em;
+        white-space: nowrap;
+
+    }
+
+    #litterList::before {
+        width: 30vw;
+    }
+
+    .tab {
+        position: absolute;
+        top: 92vh;
+        width: 33vw;
+        height: 8vh;
+        border-radius: 1vh 1vh 0 0;
+        z-index: 200;
+        visibility: visible;
+        text-align: center;
+        line-height: 6vh;
+    }
+
+    @keyframes tabSelected {
+        0% {transform: translatey(0vh);}
+        100% {transform: translatey(-80vh);}
+    }
+
+    .tabSelected {
+        animation: tabSelected 1s 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes tabDeselected {
+        0% {transform: translatey(-80vh);}
+        100% {transform: translatey(0vh);}
+    }
+
+    .tabDeselected {
+        animation: tabDeselected 1s 1;
+        animation-fill-mode: forwards;
+    }
+
+    #litterTab {
+        left: 0;
+        background-color: rgb(128, 208, 255)
+    }
+
+    #giftTab {
+        left: 33.5vw;
+        background-color: rgb(242, 90, 191);
+    }
+
+    #animalTab {
+        left: 67vw;
+        background-color: rgb(253, 213, 126);
+    }
+
+    .toJdavis img {
+        visibility: hidden;
+    }
+
+    #title {
+        top: 0;
+    }
+
+    #subtitle {
+        top: 0vh;
+    }
+
+    #entranceToggle, #clickedPos {
+        top: 23vh;
+    }
+
+    .menubar {
+        top: 10vh;
+    }
+
+    .mapControls a {
+        line-height: 5vh;
+    }
 }
