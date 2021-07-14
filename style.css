@@ -320,4 +320,8 @@ body::-webkit-scrollbar-track {
     .mapControls a {
         line-height: 5vh;
     }
+
+    #litterListDiv, #giftListDiv, #animalListDiv {
+        margin-bottom: 10vh;
+    }
 }
