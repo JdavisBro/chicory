@@ -1,0 +1,608 @@
+{
+    "gift_island_cliff1": {
+        "name": "Ahoy",
+        "screen": "0_-1_11",
+        "x": 144,
+        "y": 528
+    },
+    "gift_island_flower": {
+        "name": "Avast",
+        "screen": "0_2_12",
+        "x": 576,
+        "y": 192
+    },
+    "gift_secret_waterfall": {
+        "name": "Backwards",
+        "screen": "0_-3_-1",
+        "x": 1272,
+        "y": 720
+    },
+    "gift_dinners_southcave": {
+        "name": "Bard",
+        "screen": "0_1_-2",
+        "x": 1416,
+        "y": 840
+    },
+    "gift_dinners_skytop": {
+        "name": "Beak",
+        "screen": "0_2_-7",
+        "x": 288,
+        "y": 456
+    },
+    "gift_flower1": {
+        "name": "Beanie",
+        "screen": "0_2_2",
+        "x": 192,
+        "y": 216
+    },
+    "gift_mtn_highcorner": {
+        "name": "Beard",
+        "screen": "0_-6_-5",
+        "x": 648,
+        "y": 888
+    },
+    "gift_deepcorner2": {
+        "name": "Antenna",
+        "screen": "2_5_-3",
+        "x": 1704,
+        "y": 168
+    },
+    "gift_deepcorner": {
+        "name": "Bee",
+        "screen": "2_5_-3",
+        "x": 1380,
+        "y": 828
+    },
+    "gift_cavern_highroad2": {
+        "name": "Bell",
+        "screen": "1_6_-6",
+        "x": 1608,
+        "y": 744
+    },
+    "gift_ruins_bomb2": {
+        "name": "Beret",
+        "screen": "1_-5_-1",
+        "x": 864,
+        "y": 408
+    },
+    "gift_rainforest_clouds": {
+        "name": "Big Flower",
+        "screen": "0_5_4",
+        "x": 144,
+        "y": 216
+    },
+    "gift_deeppaths": {
+        "name": "Big Fungus",
+        "screen": "2_3_-6",
+        "x": 240,
+        "y": 264
+    },
+    "gift_bombelevation": {
+        "name": "Big Heart",
+        "screen": "0_-5_-4",
+        "x": 1584,
+        "y": 384
+    },
+    "gift_cave2_2": {
+        "name": "Big Star",
+        "screen": "1_-4_-1",
+        "x": 1536,
+        "y": 336
+    },
+    "gift_townhall_base": {
+        "name": "Biker Jacket",
+        "screen": "0_0_-6",
+        "x": 144,
+        "y": 600
+    },
+    "gift_cave2_1": {
+        "name": "Black Dress",
+        "screen": "1_-4_-2",
+        "x": 696,
+        "y": 264
+    },
+    "gift_ruins_bomb1": {
+        "name": "Black Tee",
+        "screen": "1_-7_-3",
+        "x": 1512,
+        "y": 384
+    },
+    "gift_shroom_growflower": {
+        "name": "Bolt Tee",
+        "screen": "0_3_3",
+        "x": 240,
+        "y": 744
+    },
+    "gift_supperpath": {
+        "name": "Bow",
+        "screen": "0_2_4",
+        "x": 1008,
+        "y": 648
+    },
+    "gift_macaroon": {
+        "name": "Brimcap",
+        "screen": "0_-1_1",
+        "x": 480,
+        "y": 312
+    },
+    "gift_guzzleriver_source": {
+        "name": "Chef",
+        "screen": "0_4_-3",
+        "x": 1392,
+        "y": 648
+    },
+    "gift_swampcorner": {
+        "name": "Clown",
+        "screen": "0_2_6",
+        "x": 816,
+        "y": 192
+    },
+    "gift_potluck_beach": {
+        "name": "College",
+        "screen": "0_-5_4",
+        "x": 1056,
+        "y": 672
+    },
+    "gift_cave1_1": {
+        "name": "Cord Coat",
+        "screen": "1_4_4",
+        "x": 1512,
+        "y": 912
+    },
+    "gift_canyon_top": {
+        "name": "Crown",
+        "screen": "0_4_-10",
+        "x": 912,
+        "y": 912
+    },
+    "gift_potluck_north": {
+        "name": "Cute Dress",
+        "screen": "0_-6_2",
+        "x": 552.0009,
+        "y": 384
+    },
+    "gift_rainforest_bomb": {
+        "name": "Dorky",
+        "screen": "0_5_5",
+        "x": 1320,
+        "y": 120
+    },
+    "gift_lemon2": {
+        "name": "Dot Dress",
+        "screen": "0_1_1",
+        "x": 1776,
+        "y": 600
+    },
+    "gift_peak_wall": {
+        "name": "Earflaps",
+        "screen": "0_-4_-21",
+        "x": 1644,
+        "y": 862
+    },
+    "gift_mtntrail1": {
+        "name": "Earmuffs",
+        "screen": "0_-2_-4",
+        "x": 720,
+        "y": 720
+    },
+    "gift_swamp_endpoint": {
+        "name": "Elf",
+        "screen": "0_2_7",
+        "x": 720,
+        "y": 912
+    },
+    "gift_island_shroom": {
+        "name": "Eyepatch",
+        "screen": "0_-3_11",
+        "x": 216,
+        "y": 216
+    },
+    "gift_meadow_cliff": {
+        "name": "Feather",
+        "screen": "0_1_-1",
+        "x": 1056,
+        "y": 384
+    },
+    "gift_foothill_entrance": {
+        "name": "Flower",
+        "screen": "0_-5_1",
+        "x": 480,
+        "y": 168
+    },
+    "gift_bounce1": {
+        "name": "Flower Dress",
+        "screen": "0_1_5",
+        "x": 1152,
+        "y": 360
+    },
+    "gift_woods_altpath_end": {
+        "name": "Foxy",
+        "screen": "0_4_5",
+        "x": 1296,
+        "y": 720
+    },
+    "gift_swamp_boat": {
+        "name": "Fungus",
+        "screen": "0_0_6",
+        "x": 168,
+        "y": 623.9995
+    },
+    "gift_2windbomb": {
+        "name": "Fuzzy Jacket",
+        "screen": "0_-2_-18",
+        "x": 1728,
+        "y": 528
+    },
+    "gift_swamp_islandmaze": {
+        "name": "Gardener",
+        "screen": "0_-1_6",
+        "x": 1728,
+        "y": 384
+    },
+    "gift_dinners_littletop": {
+        "name": "Goggles",
+        "screen": "0_0_-7",
+        "x": 960,
+        "y": 192
+    },
+    "gift_peak_entrance": {
+        "name": "Gorgeous",
+        "screen": "0_-2_-7",
+        "x": 288,
+        "y": 600
+    },
+    "gift_deep1": {
+        "name": "Gothy",
+        "screen": "2_8_-5",
+        "x": 1008,
+        "y": 192
+    },
+    "gift_elevenses_cave": {
+        "name": "Half-moons",
+        "screen": "1_-3_-4",
+        "x": 672,
+        "y": 432
+    },
+    "gift_guzzleriver_corner": {
+        "name": "Headphones",
+        "screen": "0_5_0",
+        "x": 1128,
+        "y": 288
+    },
+    "gift_mtntrail3": {
+        "name": "Headscarf",
+        "screen": "0_-1_-5",
+        "x": 984,
+        "y": 456
+    },
+    "gift_canyon_entrance": {
+        "name": "Helm",
+        "screen": "0_6_-5",
+        "x": 168,
+        "y": 480
+    },
+    "gift_foothill_shrooms": {
+        "name": "High Nooner",
+        "screen": "0_-6_-2",
+        "x": 1584,
+        "y": 240
+    },
+    "gift_mtn_waterfall": {
+        "name": "Hiker",
+        "screen": "0_-5_-5",
+        "x": 1344,
+        "y": 432
+    },
+    "gift_suppercave": {
+        "name": "Hoodie",
+        "screen": "0_4_6",
+        "x": 504,
+        "y": 216
+    },
+    "gift_canyon_blackpit": {
+        "name": "Horns",
+        "screen": "0_4_-6",
+        "x": 336,
+        "y": 312
+    },
+    "gift_foothills_ledgefall": {
+        "name": "Hotneck",
+        "screen": "0_-5_-3",
+        "x": 936,
+        "y": 216
+    },
+    "gift_backflip": {
+        "name": "Howdy",
+        "screen": "0_-5_-2",
+        "x": 1080,
+        "y": 456
+    },
+    "gift_island1": {
+        "name": "Island",
+        "screen": "0_-5_8",
+        "x": 144,
+        "y": 456
+    },
+    "gift_swampfling": {
+        "name": "Leafy",
+        "screen": "0_-1_7",
+        "x": 552,
+        "y": 744
+    },
+    "gift_canyon_ledgemaze": {
+        "name": "Mask",
+        "screen": "0_6_-7",
+        "x": 408,
+        "y": 168
+    },
+    "gift_cavern_source": {
+        "name": "Monocle",
+        "screen": "1_4_-5",
+        "x": 1056,
+        "y": 336
+    },
+    "gift_cave1_2": {
+        "name": "Moon Tee",
+        "screen": "1_3_3",
+        "x": 504,
+        "y": 408
+    },
+    "gift_southsecret": {
+        "name": "Nautical",
+        "screen": "0_3_8",
+        "x": 1464,
+        "y": 120
+    },
+    "gift_hidden_brewpathtop": {
+        "name": "Newsie",
+        "screen": "1_0_-2",
+        "x": 1248,
+        "y": 432
+    },
+    "gift_deep2": {
+        "name": "Nice Shirt",
+        "screen": "2_8_-4",
+        "x": 1800,
+        "y": 456
+    },
+    "gift_elevenses3": {
+        "name": "Pajamas",
+        "screen": "0_-4_-2",
+        "x": 264,
+        "y": 312
+    },
+    "gift_dinners_widetop": {
+        "name": "Pilot",
+        "screen": "0_2_-4",
+        "x": 1643,
+        "y": 699.0019
+    },
+    "gift_luncheonledge": {
+        "name": "Pocket Jacket",
+        "screen": "0_-1_-1",
+        "x": 672,
+        "y": 432
+    },
+    "gift_canyonpool": {
+        "name": "Pointish Glasses",
+        "screen": "0_3_-7",
+        "x": 480,
+        "y": 288
+    },
+    "gift_mtntrail2": {
+        "name": "Puffy Jacket",
+        "screen": "0_-1_-4",
+        "x": 192,
+        "y": 624
+    },
+    "gift_under_swampbridge": {
+        "name": "Rex Bod",
+        "screen": "1_-2_6",
+        "x": 1296,
+        "y": 360
+    },
+    "gift_under_sipsbridge": {
+        "name": "Rex Head",
+        "screen": "1_-2_2",
+        "x": 480,
+        "y": 600
+    },
+    "gift_lab": {
+        "name": "Robo",
+        "screen": "1_4_-3",
+        "x": 408,
+        "y": 840
+    },
+    "gift_cave1_hidden": {
+        "name": "Round Glasses",
+        "screen": "1_5_3",
+        "x": 624,
+        "y": 384
+    },
+    "gift_big_waterfall": {
+        "name": "Royal",
+        "screen": "0_-3_-2",
+        "x": 696,
+        "y": 552
+    },
+    "gift_island_hop": {
+        "name": "Sailor",
+        "screen": "0_-3_5",
+        "x": 864,
+        "y": 600
+    },
+    "gift_woods_bonus": {
+        "name": "Scarf",
+        "screen": "0_5_6",
+        "x": 1032,
+        "y": 336
+    },
+    "gift_rainforest_br": {
+        "name": "Scientist",
+        "screen": "0_6_3",
+        "x": 984,
+        "y": 240
+    },
+    "gift_rainforest_platforms": {
+        "name": "Shawl",
+        "screen": "0_7_2",
+        "x": 1320,
+        "y": 312
+    },
+    "gift_brekkiebeach_strip": {
+        "name": "Shell Tea",
+        "screen": "0_6_0",
+        "x": 480,
+        "y": 744
+    },
+    "gift_highriver_sidepath": {
+        "name": "Skate Helmet",
+        "screen": "0_-2_-3",
+        "x": 480,
+        "y": 168
+    },
+    "gift_rainforest_meet": {
+        "name": "Ski Jacket",
+        "screen": "0_4_3",
+        "x": 576,
+        "y": 768
+    },
+    "gift_ruins_nature": {
+        "name": "Smock",
+        "screen": "2_-7_-1",
+        "x": 264,
+        "y": 672
+    },
+    "gift_river_triangle": {
+        "name": "Sparkles",
+        "screen": "0_-2_4",
+        "x": 1248,
+        "y": 504
+    },
+    "gift_meadowgate": {
+        "name": "Spellcaster",
+        "screen": "0_3_-3",
+        "x": 408,
+        "y": 432
+    },
+    "gift_cavern_enter1": {
+        "name": "Spike",
+        "screen": "1_4_-6",
+        "x": 600,
+        "y": 216
+    },
+    "gift_deepcorridor": {
+        "name": "Spike Helmet",
+        "screen": "2_4_-5",
+        "x": 1392,
+        "y": 864
+    },
+    "gift_bombisland": {
+        "name": "Splash Onesie",
+        "screen": "0_-3_6",
+        "x": 408,
+        "y": 216
+    },
+    "gift_sipsriver_sidepath": {
+        "name": "Splashpants",
+        "screen": "0_-3_0",
+        "x": 1512,
+        "y": 384
+    },
+    "gift_woods_hiddencave": {
+        "name": "Square Glasses",
+        "screen": "1_5_6",
+        "x": 648,
+        "y": 432
+    },
+    "gift_supperfall": {
+        "name": "Starry Tee",
+        "screen": "0_3_5",
+        "x": 648,
+        "y": 720
+    },
+    "gift_rainforest_tl": {
+        "name": "Stormy",
+        "screen": "0_4_2",
+        "x": 240,
+        "y": 456
+    },
+    "gift_island_dup2": {
+        "name": "Strawhat",
+        "screen": "0_-5_10",
+        "x": 1416,
+        "y": 240
+    },
+    "gift_lemon": {
+        "name": "Stripey Tee",
+        "screen": "0_1_1",
+        "x": 1698,
+        "y": 882
+    },
+    "gift_cavern_lowroad": {
+        "name": "Studs",
+        "screen": "1_5_-4",
+        "x": 960,
+        "y": 288
+    },
+    "gift_supperdeadend": {
+        "name": "Sunhat",
+        "screen": "0_3_4",
+        "x": 1252,
+        "y": 529
+    },
+    "gift_woods_path_hidden": {
+        "name": "Gnome",
+        "screen": "0_3_4",
+        "x": 696,
+        "y": 792
+    },
+    "gift_southisland": {
+        "name": "Sunny Tee",
+        "screen": "0_-7_6",
+        "x": 768,
+        "y": 240
+    },
+    "gift_mountain_top_cave": {
+        "name": "Tiara",
+        "screen": "1_-5_-22",
+        "x": 1056,
+        "y": 408
+    },
+    "gift_top_waterfall": {
+        "name": "Top Hat",
+        "screen": "0_-5_-7",
+        "x": 408,
+        "y": 288
+    },
+    "gift_deepshroom": {
+        "name": "Tux",
+        "screen": "2_5_-6",
+        "x": 744,
+        "y": 264
+    },
+    "gift_ruins_bombmaze": {
+        "name": "Wielder Cloak",
+        "screen": "2_-5_0",
+        "x": 984,
+        "y": 504
+    },
+    "gift_swimtutsecret": {
+        "name": "Wielder Wrap",
+        "screen": "2_-1_-4",
+        "x": 1128,
+        "y": 528
+    },
+    "gift_mtntop_windcloud": {
+        "name": "Wintry",
+        "screen": "0_-2_-12",
+        "x": 960,
+        "y": 384
+    },
+    "gift_riverhigh": {
+        "name": "Woven",
+        "screen": "0_-3_-5",
+        "x": 912,
+        "y": 480
+    }
+}
