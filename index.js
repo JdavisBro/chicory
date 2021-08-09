@@ -35,7 +35,7 @@ document.getElementById('file').onchange = function(){ // Save File Loaded
 function saveToFile() { // Save a checklist
     var myBlob = new Blob([JSON.stringify(saveJson)], {type: 'text/json'});
     var anchor = document.createElement("a");
-    anchor.download = "save.json";
+    anchor.download = "NOT A SAVEFILE.json";
     anchor.href = window.URL.createObjectURL(myBlob);
     anchor.click();
 }
