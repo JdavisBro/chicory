@@ -39,7 +39,8 @@
         "name": "Beard",
         "screen": "0_-6_-5",
         "x": 648,
-        "y": 888
+        "y": 888,
+        "treasure": true
     },
     "gift_deepcorner2": {
         "name": "Antenna",
@@ -453,7 +454,8 @@
         "name": "Shell Tea",
         "screen": "0_6_0",
         "x": 480,
-        "y": 744
+        "y": 744,
+        "treasure": true
     },
     "gift_highriver_sidepath": {
         "name": "Skate Helmet",
@@ -477,7 +479,8 @@
         "name": "Sparkles",
         "screen": "0_-2_4",
         "x": 1248,
-        "y": 504
+        "y": 504,
+        "treasure": true
     },
     "gift_meadowgate": {
         "name": "Spellcaster",
