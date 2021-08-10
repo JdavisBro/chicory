@@ -22,6 +22,12 @@ var currentMap = 0
 var currentMapSize = "small" // Was planning on having larger map sizes
 var sb = null
 
+var copyDebugStuffToClipboard = false; // You can set this to true using the console to copy some debug stuff to clipboard when you click somewhere.
+
+if (window.location.hostname == "127.0.0.1") { // If I'm running it locally
+    copyDebugStuffToClipboard = true;
+}
+
 document.getElementById('file').onchange = function(){ // Save File Loaded
     var file = this.files[0];
     var reader = new FileReader();
@@ -274,7 +280,9 @@ document.getElementById('map').onclick = function clickEvent(e) { // This is for
     screenPos[1] = 1080 * (screen[2] - Math.floor(screen[2]))
     screen[2] = Math.floor(screen[2])
     document.getElementById("clickedPos").innerHTML = "Last Clicked - Screen: L " + screen[0] + " X " + screen[1] + " Y " + screen[2] + " Pos: X " + Math.round(screenPos[0]*100)/100 + " Y " + Math.round(screenPos[1]*100)/100;
-    navigator.clipboard.writeText(',\n"savethinggoeshere": {\n    "screen": "'+screen[0]+"_"+screen[1]+"_"+screen[2]+'",\n    "x": '+screenPos[0]+',\n    "y": '+screenPos[1]+',\n    "npc": true\n}'); // THIS IS NOW for adding npc litter to the thing!! awesome!
+    if (copyDebugStuffToClipboard) {
+        navigator.clipboard.writeText(',\n"savethinggoeshere": {\n    "screen": "'+screen[0]+"_"+screen[1]+"_"+screen[2]+'",\n    "x": '+screenPos[0]+',\n    "y": '+screenPos[1]+',\n    "npc": true\n}'); // THIS IS NOW for adding npc litter to the thing!! awesome!
+    }
 }
 
 // MOBILE STUFF BEGIN
