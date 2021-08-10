@@ -607,5 +607,19 @@
         "screen": "0_-3_-5",
         "x": 912,
         "y": 480
+    },
+    "gift_lostmouse_reward": {
+        "name": "Kerchief",
+        "screen": "1_-6_0",
+        "x": 299.16671752929744,
+        "y": 459.33349609375,
+        "npc": true
+    },
+    "gift_transitpass": {
+        "name": "Stache",
+        "screen": "1_0_-6",
+        "x": 492.66662597656256,
+        "y": 663.6669921874999,
+        "npc": true
     }
 }
