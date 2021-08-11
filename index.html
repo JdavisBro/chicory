@@ -11,10 +11,16 @@
     <h6 id=subtitle class=textthing>
         With litter, gifts, lost kids and save viewing!
         <br>
-        All NPC Litters are not yet added.
+        Thanks to <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2538484941" style="color:rgb(1, 56, 87);">this</a> guide for help with NPC litter/gifts
     </h6>
     <h6 id=entranceToggle class=textthing><a href="#" onclick="toggleMarkerButton('entranceMarkers')" id=entranceMarkersButton>O</a>&nbsp;Toggle Entrances</h6>
     <h6 id=clickedPos class=textthing>Last Clicked - (click somewhere)</h6>
+    <a href="#" onclick="var extrasList = document.getElementById('extrasList');extrasList.classList.toggle('visible');if (!extrasList.classList.contains('visible')||extrasList.classList.contains('notvisible')) {extrasList.classList.toggle('notvisible')}" id=extrasButton class=textthing>Extra Stuff!</a>
+    <div class=extrasList id=extrasList>
+        <p style="text-align: center;">Stuff that isn't on the map:</p>
+        <div id=extrasListStuff></div>
+        <p style="text-align: center;">If you're still missing something, make sure to check out the other layers!</p>
+    </div>    
     <div class=menubar>
         <div class=save-buttons>
             <a class=save-load href="#" onclick="saveToFile();">Save Crossed</a><a id=save-info class=info>&nbsp;🛈</a>

@@ -44,6 +44,10 @@ a {
     max-width: 30vw;
 }
 
+.save-buttons {
+    z-index: 10;
+}
+
 #save-info:hover::after {
     content: "This saves a file that contains the markers you've crossed off using the delete button next to them in the list. This is NOT a save file but can be loaded with the load button."
 }
@@ -76,7 +80,6 @@ body::-webkit-scrollbar-track {
     overflow-y: scroll;
     font-size: 2vh;
     white-space: nowrap;
-
 }
 
 #litterList {
@@ -192,6 +195,7 @@ body::-webkit-scrollbar-track {
 
 #subtitle {
     top: 0vh;
+    z-index: 50;
 }
 
 #entranceToggle {
@@ -209,6 +213,49 @@ body::-webkit-scrollbar-track {
     padding: 0.4vh 1vh 0.4vh 1vh;
     border-radius: 1vh;
 
+}
+
+#extrasButton {
+    color: aqua;
+    top: 0vh;
+    font-size: 0.8em;
+    left: 66vw;
+}
+
+.extrasList {
+    position: absolute;
+    width: 40vw;
+    background-color: rgba(0,0,0,0.9);
+    top: 4vh;
+    left: 57vw;
+    z-index: 102;
+    color: white;
+    border-radius: 16px;
+    visibility: hidden;
+}
+
+.extrasList a {
+    color:rgb(128, 208, 255);
+}
+
+@keyframes visible {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes notvisible {
+    0% {opacity: 1;visibility: visible;}
+    99% {visibility: visible;}
+    100% {opacity: 0;visibility: hidden;}
+}
+
+.visible {
+    visibility: visible;
+    animation: visible 0.7s 1;
+}
+
+.notvisible {
+    animation: notvisible 0.7s 1;
 }
 
 .deleteButton {
@@ -311,6 +358,10 @@ body::-webkit-scrollbar-track {
 
     #entranceToggle, #clickedPos {
         top: 23vh;
+    }
+
+    #extrasButton {
+        left: 50vw;
     }
 
     .menubar {
