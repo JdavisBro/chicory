@@ -320,7 +320,9 @@ document.getElementById('map').onclick = function clickEvent(e) { // This is for
 }
 
 function hide_loading() {
-    document.getElementById("loadingpos").classList.add("loadingvisible");
+       setTimeout(() => {
+        document.getElementById("loadingpos").classList.add("loadingvisible");
+       }, 350);
 }
 
 // MOBILE STUFF BEGIN
