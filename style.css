@@ -56,6 +56,45 @@ a {
     content: "You can load a file saved with the 'Save To File' button or load your save data located in '%localappdata%/paintdog/save' on Windows or '~/Library/Application Support/paintdog/save' on Mac, as '_playdata'";
 }
 
+.loadingpos {
+    position: absolute;
+    width: 7.5vh;
+    height: 7.5vh;
+    top: calc(50% - 3.75vh);
+    left: calc(50% - 3.75vh);
+}
+
+.loading { /* https://www.w3schools.com/howto/howto_css_loader.asp */
+    width: 7.5vh;
+    height: 7.5vh;
+    background-color: lightgrey;
+    border-top: 1vh solid #00ead0; /* Luncheon Palette :) */
+    border-right: 1vh solid #b696ed;
+    border-bottom: 1vh solid #ffa192;
+    border-left: 1vh solid #d8f55d;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 30px 9px #000000; 
+    box-shadow: 0px 0px 30px 9px #000000;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loadingdog {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    top: -90%;
+    left: 15%;
+}
+
+.loadingvisible { /* it's called loading visible but it makes it invisible SHUT UP!! */ 
+    visibility: hidden;
+}
+
 #mapview {
     position: absolute;
     overflow: hidden;

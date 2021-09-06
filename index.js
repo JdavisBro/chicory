@@ -246,9 +246,11 @@ function centerToSelection() { // Centres the map on the selected marker
 }
 
 function changeLayer(layer) { // Changes the maps layer 
+    if (currentMap == layer) {toCenter();return} // why doe
     currentMap = layer;
     var mapImg = document.getElementById("mapImg");
     mapImg.src = "";
+    document.getElementById("loadingpos").classList.remove("loadingvisible");
     mapImg.src = "assets/maps/"+layer+"/"+currentMapSize+".png";
     change();
 }
@@ -315,6 +317,10 @@ document.getElementById('map').onclick = function clickEvent(e) { // This is for
     if (copyDebugStuffToClipboard) {
         navigator.clipboard.writeText(',\n"savethinggoeshere": {\n    "screen": "'+screen[0]+"_"+screen[1]+"_"+screen[2]+'",\n    "x": '+screenPos[0]+',\n    "y": '+screenPos[1]+',\n    "npc": true\n}'); // THIS IS NOW for adding npc litter to the thing!! awesome!
     }
+}
+
+function hide_loading() {
+    document.getElementById("loadingpos").classList.add("loadingvisible");
 }
 
 // MOBILE STUFF BEGIN

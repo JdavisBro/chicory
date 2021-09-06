@@ -38,11 +38,15 @@
     </div>
     <div id=mapview>
     <div id=map>
-        <img class=marker id=mapImg src=assets/maps/0/small.png>
+        <img onload="hide_loading()" class=marker id=mapImg src=assets/maps/0/small.png>
         <div class=marker id=litterMarkers></div>
         <div class=marker id=giftMarkers></div>
         <div class=marker id=animalMarkers></div>
         <div class=marker id=entranceMarkers></div>
+    </div>
+    <div class=loadingpos id=loadingpos>
+        <div class=loading id=loading></div>
+        <img src="assets/dog.png" class=loadingdog>
     </div>
     </div>
     <div class=tab id=litterTab>Litter</div>
