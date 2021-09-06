@@ -281,7 +281,7 @@ function selectMarker(e,t=false,g=false) { // Selects a marker, if t assume we'r
         target.classList.add("selectedMarker");
     }
 }
-
+var one = 1;
 function makeMap() { // This makes the map scrollable in the first place
     const map = document.getElementById("map");
     const viewport = document.getElementById("mapview")
@@ -292,6 +292,12 @@ function makeMap() { // This makes the map scrollable in the first place
         scrollMode: 'transform',
         emulateScroll: false,
         textSelection: true,
+        shouldScroll: (state) => { // This is to make you able to stop scrolling to a position, can't get it to allow you to move after though...
+            if (state.isMoving) {
+                sb.scrollTo(state.position)
+            }
+            return true;
+        }
     });
     sb.setPosition({
       x: mapCentres[currentMap][currentMapSize][0]-viewport.offsetWidth/2+(1920/mapGridDivs[currentMapSize])/2,
