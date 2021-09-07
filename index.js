@@ -72,7 +72,7 @@ function change() { // Place markers and list elements
     marker.style.position = "absolute";
     marker.style.height = "30px";
     markers.innerHTML = "";
-    var list = document.getElementById("litterListDiv"); // LITTER - get list
+    ist = document.getElementById("litterListDiv"); // LITTER - get list
     list.innerHTML = "" // Clear list
     for (const key in litter) { // For each of the keys in litter
         var screen = litter[key]["screen"].split("_");
@@ -246,7 +246,7 @@ function centerToSelection() { // Centres the map on the selected marker
 }
 
 function changeLayer(layer) { // Changes the maps layer 
-    if (currentMap == layer) {toCenter();return} // why doe
+    if (currentMap == layer) {toCenter(true);return} // why doe
     currentMap = layer;
     var mapImg = document.getElementById("mapImg");
     mapImg.src = "";
@@ -255,9 +255,14 @@ function changeLayer(layer) { // Changes the maps layer
     change();
 }
 
-function toCenter() { // Centres the map
-    const viewport = document.getElementById("mapview")
-    sb.scrollTo({x: mapCentres[currentMap][currentMapSize][0]-viewport.offsetWidth/2+(1920/mapGridDivs[currentMapSize])/2,y: mapCentres[currentMap][currentMapSize][1]-viewport.offsetHeight/2+(1080/mapGridDivs[currentMapSize])/2});
+function toCenter(noscroll) { // Centres the map
+    const viewport = document.getElementById("mapview");
+    posTo = {x: mapCentres[currentMap][currentMapSize][0]-viewport.offsetWidth/2+(1920/mapGridDivs[currentMapSize])/2,y: mapCentres[currentMap][currentMapSize][1]-viewport.offsetHeight/2+(1080/mapGridDivs[currentMapSize])/2}
+    if (noscroll) {
+        sb.setPosition(posTo);  
+    } else {
+        sb.scrollTo(posTo);
+    }
 }
 
 function selectMarker(e,t=false,g=false) { // Selects a marker, if t assume we're in a list element and select our markerId, if g, e is the element and not e.target | Sorry for the dogshit variable names
@@ -281,7 +286,6 @@ function selectMarker(e,t=false,g=false) { // Selects a marker, if t assume we'r
         target.classList.add("selectedMarker");
     }
 }
-var one = 1;
 function makeMap() { // This makes the map scrollable in the first place
     const map = document.getElementById("map");
     const viewport = document.getElementById("mapview")
@@ -292,12 +296,6 @@ function makeMap() { // This makes the map scrollable in the first place
         scrollMode: 'transform',
         emulateScroll: false,
         textSelection: true,
-        shouldScroll: (state) => { // This is to make you able to stop scrolling to a position, can't get it to allow you to move after though...
-            if (state.isMoving) {
-                sb.scrollTo(state.position)
-            }
-            return true;
-        }
     });
     sb.setPosition({
       x: mapCentres[currentMap][currentMapSize][0]-viewport.offsetWidth/2+(1920/mapGridDivs[currentMapSize])/2,
