@@ -72,7 +72,7 @@ function change() { // Place markers and list elements
     marker.style.position = "absolute";
     marker.style.height = "30px";
     markers.innerHTML = "";
-    ist = document.getElementById("litterListDiv"); // LITTER - get list
+    list = document.getElementById("litterListDiv"); // LITTER - get list
     list.innerHTML = "" // Clear list
     for (const key in litter) { // For each of the keys in litter
         var screen = litter[key]["screen"].split("_");
