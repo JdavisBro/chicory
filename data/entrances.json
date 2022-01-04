@@ -1335,5 +1335,19 @@
         "x": 1311.500244140625,
         "y": 266.5002441406246,
         "to": "hotelElevator"
+    },
+    "hatMakerEntrance": {
+        "direction": "up",
+        "screen": "0_-2_-2",
+        "x": 680.0000000000001,
+        "y": 716.0009765625,
+        "to": "hatMaker"
+    },
+    "hatMaker": {
+        "direction": "down",
+        "screen": "1_-2_-1",
+        "x": 1350,
+        "y": 796.1669921875,
+        "to": "hatMakerEntrance"
     }
 }
