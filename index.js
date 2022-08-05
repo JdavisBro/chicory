@@ -77,17 +77,17 @@ function change() { // Place markers and list elements
     list.innerHTML = "" // Clear list
     for (const key in litter) { // For each of the keys in litter
         var screen = litter[key]["screen"].split("_");
-        var hasPropertyBypass = false;
+        var hasPropertyUnbypass = false;
         if (litter[key].hasOwnProperty("require")) {
             if (saveJson.hasOwnProperty(litter[key]["require"]["key"])) {
                 var dataValue = saveJson[litter[key]["require"]["key"]]
                 var targetValue = litter[key]["require"]["value"]
                 if ({"=": dataValue==targetValue,">": dataValue>targetValue,"<": dataValue<targetValue}[litter[key]["require"]["operation"]]) {
-                    hasPropertyBypass = true
+                    hasPropertyUnbypass = true
                 }
             }
         }
-        if ((!saveJson.hasOwnProperty(key) || hasPropertyBypass) & screen[0] == currentMap) { // If the save data doesn't contain it and we're on the right layer
+        if ((!saveJson.hasOwnProperty(key) && !hasPropertyUnbypass) & screen[0] == currentMap) { // If the save data doesn't contain it and we're on the right layer
             marker, name = checkMarkerType(litter[key],marker,key,"assets/markers/litter") // Check for special markers (NPC, treasure guys)
             addMarker(key,litter[key],screen,markers,marker,list,0,name);
         }
